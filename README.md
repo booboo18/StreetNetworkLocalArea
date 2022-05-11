@@ -1,15 +1,15 @@
 # StreetNetworkLocalArea 
-This repository contains the code that applies modularity optimisation on the street network dual graph to identify street based local areas (Law 2017). The repository contains code which borrows/adapts from [Python-Louvain](https://github.com/taynaud/python-louvain)  a python implementation for the louvain algorithm (Blondel et al 2008). 
+This working repository contains the code that applies modularity optimisation on the street network dual graph to identify street based local areas (Law 2017). The repository contains code which borrows/adapts from [Python-Louvain](https://github.com/taynaud/python-louvain)  a python implementation for the louvain algorithm (Blondel et al 2008). 
 
 # Setup 
 The repository have been tested with the standard install of Anaconda Distribution which is a popular open source Python distribution platform. [Anaconda](https://docs.anaconda.com/anaconda/install/index.html)
 After setting up the python environment, clone the repository locally.
 
 # Running the script
-You can play with the script using the jupyter notebook in the repository called ```Street based Local Area.ipynb```
-At the moment the code requires the street network shapefile (*.shp) file to be in the unprocessed folder. After this the script processes the graph and outputs the processed street network as a shape file in the processed folder. The notebook also makes a couple of image outputs. However at the moment, for better control of the visualisation, we suggest loading the shapefile into QGIS and plotting the graph using a user control style. If you want to run the code with your own graph, please put in your own street network file (*.shp) into the unprocessed folder. 
+You can play with the script using the jupyter notebook entitled ```Street based Local Area.ipynb```
+The code requires a street network shapefile (*.shp) as inputs where it then processes the graph using the modularity optimisation algorithm. At the moment the street network of Nicosia can be found in the unprocessed folder. Please replaces this with your own data. For better control of the visualisation, we suggest loading the shapefile into QGIS and plotting the graph. 
 
-We hope to improve the I/O and the visualisation in the future.
+This is a working repository where we hope to improve the I/O and the visualisation in the future.
 
 # Dependencies for running locally
 * os
