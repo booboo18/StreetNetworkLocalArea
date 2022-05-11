@@ -1,8 +1,8 @@
 # StreetNetworkLocalArea 
-This repository contains the code that applies modularity optimisation on the street network dual graph to identify street based local areas (Law 2017). The repository contains code which borrows/adapts from https://github.com/taynaud/python-louvain a python implementation for the louvain algorithm (Blondel et al 2008). 
+This repository contains the code that applies modularity optimisation on the street network dual graph to identify street based local areas (Law 2017). The repository contains code which borrows/adapts from [Python-Louvain](https://github.com/taynaud/python-louvain)  a python implementation for the louvain algorithm (Blondel et al 2008). 
 
 # Setup 
-The repository have been tested with the standard install of Anaconda Distribution which is a popular open source Python distribution platform. https://docs.anaconda.com/anaconda/install/index.html
+The repository have been tested with the standard install of Anaconda Distribution which is a popular open source Python distribution platform. [Anaconda](https://docs.anaconda.com/anaconda/install/index.html)
 After setting up the python environment, clone the repository locally.
 
 # Running the script
