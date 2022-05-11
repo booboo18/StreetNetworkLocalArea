@@ -1,17 +1,15 @@
-# StreetNetworkLocalArea
-This repository contains the code for my PhD and subsequent publication in Law (2017). The paper applies modularity optimisation on the street network dual graph to identify street based local areas or street neighbourhoods. The repository contains code borrows/adapts from https://github.com/taynaud/python-louvain which is the python implementation for the louvain algorithm (Blondel et al 2008). 
+# StreetNetworkLocalArea 
+This repository contains the code that applies modularity optimisation on the street network dual graph to identify street based local areas (Law 2017). The repository contains code which borrows/adapts from https://github.com/taynaud/python-louvain a python implementation for the louvain algorithm (Blondel et al 2008). 
 
 # Setup 
-The repository have been tested using the standard version of Anaconda Individual Edition which is the recommended way to setup a Python Environment for the first time. https://docs.anaconda.com/anaconda/install/index.html
-Alternatively, you can create your own environment (eg. miniconda) to run the code. After setting up the python environment, clone the repository locally.
+The repository have been tested with the standard install of Anaconda Distribution which is a popular open source Python distribution platform. https://docs.anaconda.com/anaconda/install/index.html
+After setting up the python environment, clone the repository locally.
 
 # Running the script
-In the cloned repository, you can run the code with the Nicosia city graph that had been downloaded from open street maps which takes the graph in the unprocessed folder and puts the processed graph in the processed folder: 
-```
-main.py()
-```
+You can play with the script using the jupyter notebook in the repository called ```Street based Local Area.ipynb```
+At the moment the code requires the street network shapefile (*.shp) file to be in the unprocessed folder. After this the script processes the graph and outputs the processed street network as a shape file in the processed folder. The notebook also makes a couple of image outputs. However at the moment, for better control of the visualisation, we suggest loading the shapefile into QGIS and plotting the graph using a user control style. If you want to run the code with your own graph, please put in your own street network file (*.shp) into the unprocessed folder. 
 
-If you want to run the code with your own graph, please exchange the graph in the unprocessed folder. (i/o will change in the near future).
+We hope to improve the I/O and the visualisation in the future.
 
 # Dependencies for running locally
 * os
