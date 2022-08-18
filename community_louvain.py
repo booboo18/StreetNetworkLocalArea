@@ -37,7 +37,8 @@ def community_modularity(G):
     #return dendo
     DG=nx.to_undirected(G)
     DG2=nx.line_graph(DG)
-    dendo = generate_dendrogram(DG)
+    #DG =nx.line_graph(DG)
+    dendo = generate_dendrogram(DG2)
     for i in np.arange(0,len(dendo),1):
         partition=partition_at_level(dendo, i)
         nx.set_edge_attributes(DG,dict(partition),'mod_'+str(i))
